@@ -1,1 +1,128 @@
-font-family: 'Oswald', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;469;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@469&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,531;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,531;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Oswald', sans-serif;
+}
+/*Header section*/
+@media(max-width:2000px){
+.header-section{
+    height: 141px;
+}
+.container{
+    width: 1150px;
+    margin: auto;
+    font-size: 15px;
+}
+.top_Bar{
+    overflow: hidden;
+}
+.contact-head{
+    background: #F5F5F5;
+}
+.phone{
+    width: 210px;
+    float: left;
+    padding: 15px 10px;
+    border-right: 1px solid rgba(221, 221, 221,.7);
+    border-left: 1px solid rgba(221, 221, 221,.7);
+}
+
+.email{
+    width: 740px;
+    float: left;
+    padding: 15px;
+}
+.social{
+    width: 200px;
+    float: left;
+}
+.social a{
+    display: block;
+    padding: 15px 18px;
+    float: left;
+    border-right: 1px solid rgba(221, 221, 221,.7);
+    color: #2b2b2b;
+    transition: .3s;
+}
+.social a:first-child{
+    border-left: 1px solid rgba(221, 221, 221,.7);
+}
+.phone i,
+.email i{
+    color: #ff5200;
+}
+.social a:hover{
+    color: #ff5200;
+}
+.logo{
+    width: 150px;
+    float: left;
+    padding: 22px 0px;
+}
+.menu{
+    width: 990px;
+    float: left;
+}
+.menu ul li{
+    display:inline-block;
+    padding: 31px 0px;
+    margin-right: 30px;
+}
+.main-menu{
+    float: right;
+}
+.menu ul li a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;;
+    letter-spacing: .08em;
+    line-height: 30px;
+    transition: .2s;
+}
+.menu ul li .active{
+    color: #ff5200;
+}
+.main-menu li a:hover{
+    color: #ff5200;
+}
+.menu ul li a i{
+    font-size: 18px;
+}
+.menu ul li .arrow:after{
+    display: inline-block;
+    content: "\e64b";
+    margin-left: 5px;
+    font-size: 12px;
+    font-family: "themify";
+    font-style: normal;
+    font-weight: bold;
+    line-height: 0.9;
+}
+
+.sub-menu{
+  position: absolute;
+  width: 271px;
+  height: 400px;
+  background: #fff;
+
+}
+}
+@media(max-width:2000px){
+    .slider{
+        background: url('/Project-Brigate/Resources/img/slide-1.jpg');
+      
+    }
+}
+
+
