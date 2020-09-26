@@ -175,9 +175,10 @@ text-transform: capitalize !important;
     vertical-align: middle;
 }
 }
+/*Home Slider*/
 @media(max-width:2000px){
     .home-slider{
-        background: url('/Project-Brigate/Resources/img/slide-1.jpg');
+        background: url('img/slide-1.jpg');
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -205,7 +206,7 @@ text-transform: capitalize !important;
        font-size: 18px;
     font-weight: 500;
    }
-   .slider-content a{
+ .btn{
        background: #ff5200;
        color: #F5F5F5;
        border: none;
@@ -218,6 +219,10 @@ text-transform: capitalize !important;
       font-family:'Oswald', sans-serif ;
       text-transform: uppercase;
       letter-spacing: 1px;
+      transition: .2s;
+   }
+   .slider-content a:hover{
+       background: #252525;
    }
    .slider-navigation{
     width: 60px;
@@ -239,6 +244,7 @@ text-transform: capitalize !important;
        border-color: #ff5200;
    }
 }
+/*Service section*/
 @media(max-width:2000px){
     .service-section{
         background-color: #f5f6f6;
@@ -285,7 +291,110 @@ text-transform: capitalize !important;
    .serviceBox-wrapper .special .desc p,
    .serviceBox-wrapper .special .link{
     color: #fff;
+   
    }
+   .singleBox{
+       transition: .7s ease;
+   }
+   .singleBox:hover{
+       background: #ff5200;
+   }
+
+    .singleBox:hover .title,
+    .singleBox:hover .desc p,
+    .singleBox:hover .link,
+    .singleBox:hover .icon i
+  {
+    color: #fff;
+    cursor: pointer;
+  }
+ .singleBox .icon i{
+     color: #ff5200;
+ }
+}
+@media(max-width:2000px){
+    .team_contents{
+        overflow: hidden;
+    }
+.team-Image{
+  width: 550px;
+}
+.team-Image img{
+    max-width: 100%;
+    float: left;
+    height: 434px;
+    background-size: cover;
+    background-position: center center;
+}
+.team-details{
+    width: 550px;
+    float: right;
+}
+h2 {
+    font-size: 36px;
+    padding-top: 0px;
+    line-height: 1.2em;
+    margin-bottom: 0px;
+    padding-bottom: 15px;
+    font-weight: 500 !important;
+    letter-spacing: 0.02em;
+}
+.team-details .desc p {
+    font-family: 'Work Sans', sans-serif;
+    color: #656565 !important;
+    font-size: 16px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    margin-bottom: 20px;
+}
+.facilities ul {
+    list-style: none;
+    width: 260px;
+    float: left;
+    margin-bottom: 30px;
+}
+.facilities ul li{
+    line-height: 40px;
+}
+.facilities ul li a{
+    text-decoration: none;
+    color: #222222;
+    font-weight: 500;
+    transition: all 300ms ease;
+}
+
+.facilities ul li .arrow-right:before{
+display: inline-block;
+content: "\e649";
+font-family: "themify";
+font-size: 11px;
+color: #222222;
+margin-right: 15px;
+}
+.facilities ul li a:hover{
+    color: #ff5200;
+}
+.team-details .team-btn a:hover{
+    background: #252525;
+}
+.team-details .team-btn .btn{
+    padding: 0.72em 2.1em;
+    letter-spacing: .08em;
+}
+}
+@media(max-width:2000px){
+    .whyChooseUs{
+        background:linear-gradient(#00000073,#00000073), url(/Resources/img/why-choose-us1.jpg);
+        background-repeat: no-repeat;
+    }
+    .icon-wrapper{
+    overflow: hidden;
+    }
+    .icon-wrapper .singleBox-choose{
+        width: 250px;
+        color: #fff;
+        text-align: center;
+    }
 }
 
 
